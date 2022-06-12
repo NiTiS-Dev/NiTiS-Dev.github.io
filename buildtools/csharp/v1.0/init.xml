@@ -1,4 +1,4 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="../ModuleVersions.targets" />
+  <Import Project="https://nitis-dev.github.io/buildtools/csharp/NiBuildToolBase.xml" />
   <NBTV>1.0</NBTV>
 </Project>
