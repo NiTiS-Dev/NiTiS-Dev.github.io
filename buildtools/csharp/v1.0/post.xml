@@ -1,52 +1,52 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(NBT_HOME)/csharp/NiBuildToolPostBase.xml" />
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(NBT_HOME)/csharp/NiBuildToolPostBase.targets" />
   
   <PropertyGroup Label="Assembly metadata">
-    
-    <AssemblyName>$(NBT_Name)</AssemblyName>
+	
+	<AssemblyName>$(NBT_Name)</AssemblyName>
 	  <AssemblyTitle>$(NBT_Name)</AssemblyTitle>
 		<TargetName Condition="$(NBT_CustomFileName)!=''">$(NBT_CustomFileName)</TargetName>
 		<AssemblyVersion>$(NBT_Version)</AssemblyVersion>
-    
+	
   </PropertyGroup>
   
   <PropertyGroup Label="Package Properties">
-    
-    <PackageVersion>$(NBT_Version)</PackageVersion>
-    <NBT_Description Condition="$(NBT_Description)==''">$(NBT_Summary)</NBT_Description>
-		<Description>$(NBT_Description)</Description>
-		<Summary>$(NBT_Summary)</Summary>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageId Condition="$(NBT_ID)==''">$(NBT_Name)</PackageId>
-    <PackageId Condition="$(NBT_ID)!=''">$(NBT_ID)</PackageId>
-    
+	
+	<PackageVersion>$(NBT_Version)</PackageVersion>
+	<NBT_Description Condition="$(NBT_Description)==''">$(NBT_Summary)</NBT_Description>
+	<Description>$(NBT_Description)</Description>
+	<Summary>$(NBT_Summary)</Summary>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageId Condition="$(NBT_ID)==''">$(NBT_Name)</PackageId>
+	<PackageId Condition="$(NBT_ID)!=''">$(NBT_ID)</PackageId>
+	
   </PropertyGroup>
   
   <PropertyGroup Label="Target Framework" Condition="$(NBT_Singleframe)">
-    
-    <TargetFramework>$(NBT_Frameworks)</TargetFramework>
-    
+	
+	<TargetFramework>$(NBT_Frameworks)</TargetFramework>
+	
   </PropertyGroup>
   
   <PropertyGroup Label="Target Frameworks" Condition="!$(NBT_Singleframe)">
-    
-    <TargetFrameworks>$(NBT_Frameworks)</TargetFrameworks>
-    
+	
+	<TargetFrameworks>$(NBT_Frameworks)</TargetFrameworks>
+	
   </PropertyGroup>
   
   <PropertyGroup Label="Add Readme" Condition="$(NBT_UseREADME)">
-    
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    
+	
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	
   </PropertyGroup>
-        
+		
   <ItemGroup Condition="$(NBT_SignAssembly)">
-    <Compile Include="$(NBT_HOME)/csharp/v1.0/BuildWithNiTiSBuildToolsAttribute.cs" />
+	<Compile Include="$(NBT_HOME)/csharp/v1.0/BuildWithNiTiSBuildToolsAttribute.cs" />
   </ItemGroup>
 	
   <ItemGroup Label="Add Readme File" Condition="$(NBT_UseREADME)">
 	  
-    <None Include="README.md" Pack="true" PackagePath="\" />
+	<None Include="README.md" Pack="true" PackagePath="\" />
 	  
   </ItemGroup>
   
