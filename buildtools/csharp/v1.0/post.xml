@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="https://nitis-dev.github.io/buildtools/csharp/NiBuildToolPostBase.xml" />
+  <Import Project="$(NBT_HOME)/csharp/NiBuildToolPostBase.xml" />
   
   <PropertyGroup Label="Assembly metadata">
     
@@ -41,7 +41,7 @@
   </PropertyGroup>
         
   <ItemGroup Condition="$(NBT_SignAssembly)">
-    <Compile Include="https://nitis-dev.github.io/buildtools/csharp/v1.0/BuildWithNiTiSBuildToolsAttribute.cs" />
+    <Compile Include="$(NBT_HOME)/csharp/v1.0/BuildWithNiTiSBuildToolsAttribute.cs" />
   </ItemGroup>
 	
   <ItemGroup Label="Add Readme File" Condition="$(NBT_UseREADME)">
