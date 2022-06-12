@@ -45,9 +45,9 @@
 		<Compile Include="$(NBT_HOME)/csharp/v1.0/BuildWithNiTiSBuildToolsAttribute.cs" />
 	</ItemGroup>
 
-	<ItemGroup Label="Add Readme File" Condition="$(NBT_UseREADME)">
+	<ItemGroup Label="Add Readme File">
 
-		<None Include="README.md" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath=""/>
 
 	</ItemGroup>
 

@@ -10,5 +10,6 @@
 		<NBT_ID></NBT_ID>
 		<NBT_SignAssembly>true</NBT_SignAssembly>
 		<NBT_Nullable>enable</NBT_Nullable>
+		<DebugType>embedded</DebugType>
 	</PropertyGroup>
 </Project>
