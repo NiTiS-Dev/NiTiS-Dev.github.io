@@ -1,9 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <NBT_Singleframe>false</NBT_Singleframe>
-  <NBT_Frameworks>net5.0</NBT_Frameworks>
-  <NBT_Name>NBT_Name</NBT_Name>
-  <NBT_Version>NBT_Version</NBT_Version>
-  <NBTV>None</NBTV>
-  <NBT_Summary></NBT_Summary>
-  <NBT_Description><NBT_Description>
+  <PropertyGroup>
+    <NBT_Singleframe>false</NBT_Singleframe>
+    <NBT_Frameworks>net5.0</NBT_Frameworks>
+    <NBT_Name>NBT_Name</NBT_Name>
+    <NBT_Version>NBT_Version</NBT_Version>
+    <NBTV>None</NBTV>
+    <NBT_Summary></NBT_Summary>
+    <NBT_Description><NBT_Description>
+  </PropertyGroup>
 </Project>
