@@ -2,7 +2,10 @@
   <Import Project="https://nitis-dev.github.io/buildtools/csharp/NiBuildToolBase.xml" />
   <PropertyGroup>
     <NBTV>1.0</NBTV>
-    <LangVersion>latest<LangVersion>
-    <NBT_UseREADME>false<NBT_UseREADME>
+    <LangVersion>latest</LangVersion>
+    <NBT_UseREADME>false</NBT_UseREADME>
+    <NBT_Owner></NBT_Owner>
+    <NBT_Authors></NBT_Authors>
+    <NBT_Tags></NBT_Tabs>
   </PropertyGroup>
 </Project>
