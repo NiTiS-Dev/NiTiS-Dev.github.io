@@ -1,13 +1,14 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(NBT_HOME)/csharp/NiBuildToolBase.props" />
-  <PropertyGroup>
-    <NBTV>1.0</NBTV>
-    <LangVersion>latest</LangVersion>
-    <NBT_UseREADME>false</NBT_UseREADME>
-    <NBT_Owner></NBT_Owner>
-    <NBT_Authors></NBT_Authors>
-    <NBT_Tags></NBT_Tags>
-    <NBT_ID></NBT_ID>
-    <NBT_SignAssembly>true</NBT_SignAssembly>
-  </PropertyGroup>
+<Project>
+	<Import Project="$(NBT_HOME)/csharp/NiBuildToolBase.props" />
+	<PropertyGroup>
+		<NBTV>1.0</NBTV>
+		<LangVersion>latest</LangVersion>
+		<NBT_UseREADME>false</NBT_UseREADME>
+		<NBT_Owner></NBT_Owner>
+		<NBT_Authors></NBT_Authors>
+		<NBT_Tags></NBT_Tags>
+		<NBT_ID></NBT_ID>
+		<NBT_SignAssembly>true</NBT_SignAssembly>
+		<NBT_Nullable>enable</NBT_Nullable>
+	</PropertyGroup>
 </Project>
