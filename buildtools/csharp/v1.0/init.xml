@@ -3,5 +3,6 @@
   <PropertyGroup>
     <NBTV>1.0</NBTV>
     <LangVersion>latest<LangVersion>
+    <NBT_UseREADME>false<NBT_UseREADME>
   </PropertyGroup>
 </Project>
