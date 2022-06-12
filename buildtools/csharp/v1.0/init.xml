@@ -7,5 +7,6 @@
     <NBT_Owner></NBT_Owner>
     <NBT_Authors></NBT_Authors>
     <NBT_Tags></NBT_Tabs>
+    <NBT_ID></NBT_ID>
   </PropertyGroup>
 </Project>
