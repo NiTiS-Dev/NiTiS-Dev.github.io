@@ -1,0 +1,18 @@
+<Project>
+	<Import Project="$(NBT_HOME)/csharp/v1.0/post.xml" />
+
+	<PropertyGroup Label="Package Properties">
+    
+    <NBT_IconPath Condition="$(NBT_IconPath)==''&&$(NBT_IconType)=='internal'">icon.png</NBT_IconPath>
+    <PackageIcon Condition="$(NBT_IconType)=='internal'">$(NBT_IconPath)</PackageIcon>
+    <PackageIconUrl Condition="$(NBT_IconType)=='link'">$(NBT_IconPath)</PackageIconUrl>
+    
+	</PropertyGroup>
+
+	<ItemGroup Label="Add Icon File">
+
+		<None Include="$(NBT_IconPath)" Pack="true" PackagePath="" Condition="$(NBT_IconType)=='internal'"/>
+
+	</ItemGroup>
+
+</Project>
