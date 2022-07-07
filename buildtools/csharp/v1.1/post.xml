@@ -3,9 +3,11 @@
 
 	<PropertyGroup Label="Package Properties">
     
-    <NBT_IconPath Condition="$(NBT_IconPath)==''&&$(NBT_IconType)=='internal'">icon.png</NBT_IconPath>
+    <NBT_IconPath Condition="$(NBT_IconPath)=='' And $(NBT_IconType)=='internal'">icon.png</NBT_IconPath>
     <PackageIcon Condition="$(NBT_IconType)=='internal'">$(NBT_IconPath)</PackageIcon>
     <PackageIconUrl Condition="$(NBT_IconType)=='link'">$(NBT_IconPath)</PackageIconUrl>
+
+    <AllowUnsafeBlocks Condition="$(NBT_Unsafe)=='true' Or $(NBT_Unsafe)=='True'">true</AllowUnsafeBlocks>
     
 	</PropertyGroup>
 

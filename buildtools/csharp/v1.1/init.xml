@@ -1,8 +1,10 @@
 <Project>
-	<Import Project="$(NBT_HOME)/csharp/v1.0/init.props" />
+	<Import Project="$(NBT_HOME)/csharp/v1.0/init.xml" />
 	<PropertyGroup>
 		<NBTV>1.1</NBTV>
 		<NBT_IconType></NBT_IconType> <!-- link | internal -->
 		<NBT_IconPath></NBT_IconPath>
+
+		<NBT_Unsafe>true</NBT_Unsafe>
 	</PropertyGroup>
 </Project>

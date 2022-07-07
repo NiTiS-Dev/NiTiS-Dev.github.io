@@ -35,13 +35,13 @@
 	
 	</PropertyGroup>
 
-	<PropertyGroup Label="Add Readme" Condition="$(NBT_UseREADME)">
+	<PropertyGroup Label="Add Readme" Condition="$(NBT_UseREADME)=='true' Or $(NBT_UseREADME)=='True'">
 	
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	
 	</PropertyGroup>
 		
-	<ItemGroup Condition="$(NBT_SignAssembly)">
+	<ItemGroup Condition="$(NBT_SignAssembly)=='true' Or $(NBT_SignAssembly)=='True'">
 		<Compile Include="$(NBT_HOME)/csharp/v1.0/BuildWithNiTiSBuildToolsAttribute.cs" />
 	</ItemGroup>
 
